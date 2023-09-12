@@ -1,0 +1,40 @@
+body {
+    background-color: #000033;
+}
+
+@font-face { font-family: Retro gaming; src: url(RetroGaming.ttf');} 
+
+p {
+    color: LightBlue; 
+    font-family: Retro gaming;
+}
+
+#home-title {
+    color: LightBlue;
+    font-family: Retro gaming;
+
+}
+
+#menu {
+    color: LightBlue;
+    font-family: Retro gaming;
+}
+
+.menu-items {
+    font-family: Retro gaming;
+}
+
+#about-title {
+    color: LightBlue;
+    font-family: Retro gaming;
+}
+
+#residents-title {
+    color: LightBlue;
+    font-family: Retro gaming;
+}
+
+#upcomingevents-title {
+    color: LightBlue;
+    font-family: Retro gaming;
+}

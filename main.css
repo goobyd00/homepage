@@ -1,3 +1,28 @@
 body {
     background-color:lightgoldenrodyellow
 }
+
+p {
+    cursor:grab;
+    background-color: lightgreen;
+    padding: 30px;
+    border-radius: 50px;
+}
+
+p:hover {
+    font-size: 30px;
+}
+
+a { 
+ color:green;
+ text-decoration: none;
+ cursor:grabbing;
+}
+
+a:visited {
+  color: brown;
+}
+
+a:hover {
+ background-color: cadetblue;
+}
