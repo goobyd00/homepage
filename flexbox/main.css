@@ -1,0 +1,40 @@
+* {
+    box-sizing:border-box;
+    
+}
+
+.container {
+    background-color: lightblue;
+    padding: 10px;
+    height: 400px;
+    
+    display: flex;
+    flex-direction: row; /* row is default even without flex-direction */
+    flex-wrap: wrap; /* when screen gets smaller, items will adjust and wrap to the bottom of the row */
+    flex-flow: row wrap; /* the two properties above combined */
+    justify-content: center; /* justifies item to sides, as well as spacing, similar to how type can be justified */
+     /* align-items: center; */
+    align-content: center;
+
+    gap: 20px 40px;
+
+}
+
+.item {
+    background-color: bisque;
+    padding: 10px;
+    border: 1px solid;
+   
+    width: 300px;
+    height: 100px;
+
+    display: flex;
+    justify-content: center; /* center horizontally */
+    align-items: center; /* center vertically */
+
+}
+
+.special {
+    background-color: chartreuse;
+    order: -1;
+}
