@@ -23,3 +23,17 @@ ol {background-color: aquamarine;
     background-color: darkolivegreen;
     border: 60px dotted lightblue;
 }
+
+.wrapper {
+    position: relative;
+}
+
+.test {
+    background-color: rgba(0, 0, 0, 0); /* Transparent background */
+    transition: background-color 0.3s ease-in-out; /* Smooth transition */
+    color:aqua;
+}
+
+.test:hover {
+    color:brown;
+}
