@@ -1,0 +1,64 @@
+* {
+    box-sizing:border-box;
+    
+}
+
+body {
+    background: rgb(138, 166, 167);
+}
+
+.dark {
+    background-color: rgb(52, 58, 58);
+
+}
+
+.bg {
+    background-image: url(../javascript/ducklings.webp);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.reveal {
+opacity: 1;
+}
+
+.sidebar {
+    padding: 20px;
+    background-color: slategray;
+    color: white;
+    font-size: 20px;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    height: 100vh;
+    width: 250px;
+    text-align: center;
+    transition: right .3s;
+}
+
+.active {
+   right: 0;
+  }
+  
+.square {
+    height: 100px;
+    width: 100px;
+    background-color: slategrey;
+    position: fixed;
+    left: 30px;
+    bottom: 30px;
+    transition: all .3s;
+}
+
+.spin {
+    transform: rotate(180deg);
+    background-color: lightyellow;
+}
