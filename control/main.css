@@ -1,0 +1,353 @@
+* {
+    box-sizing:border-box;
+    
+}
+
+body {
+    background-color: lightgray;
+    font-family: 'vppixel';
+}
+
+@font-face {
+    font-family: 'vppixel';
+    src: url('../control/webfontkit-20231030-135730/vppixel-simplified-webfont.woff2') format('woff2'),
+         url('../control/webfontkit-20231030-135730/vppixel-simplified-webfont.woff') format('woff');
+    /* Add other font formats if needed */
+  }
+
+.pop {
+    background-color: red;
+    width: 400px;
+    height: 60px;
+    position: absolute;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid black;
+    border-width: 1px 2px 2px 1px;
+    box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5) inset,
+              -1px -1px 2px rgba(0, 0, 0, 0.5) inset;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup {
+    background-color: lightgrey;
+    width: 600px;
+    height: 200px;
+    padding: 50px;
+    text-align: center;
+    position: relative;
+    border: 1px solid black;
+    border-width: 1px 2px 2px 1px;
+    box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5) inset,
+              -1px -1px 2px rgba(0, 0, 0, 0.5) inset;
+}
+
+.buttons {
+    background-color: lightgrey;
+    width: 99%;
+    height: 20%;
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    bottom: 20px;
+    left: 50%; 
+    transform: translateX(-50%);
+}
+
+.choice {
+    background-color: lightgrey;
+    width: 80px;
+    height: 20px;
+    display: flex;
+    text-align: center;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-width: 1px 2px 2px 1px;
+    box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5) inset,
+              -1px -1px 2px rgba(0, 0, 0, 0.5) inset;
+
+}
+
+.choicetext {
+    background-color: lightgrey;
+    display: flex;
+}
+
+.link {
+    text-decoration: none; 
+    color: #000; 
+}
+
+
+
+input[type="text"] {
+    width: 200px; /* Set the width of the input box */
+    padding: 10px; /* Set padding for the input */
+    border: 1px solid #ccc; /* Set a border */
+    border-radius: 4px; /* Add some border radius for a rounded appearance */
+  }
+
+.container2 {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.popup2 {
+    background-color: lightgrey;
+    width: 300px;
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid black;
+    border-width: 1px 2px 2px 1px;
+    box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5) inset,
+              -1px -1px 2px rgba(0, 0, 0, 0.5) inset;
+
+}
+
+.card {
+    background-color: white;
+    display: flex;
+    
+}
+
+#draggable { 
+    background-color: white;
+    width: 100px; 
+    height: 100px; 
+    padding: 0.5em; 
+    float: left; 
+    margin: 10px 10px 10px 0; 
+    text-align: center;
+    border: 1px solid black;
+    border-width: 1px 2px 2px 1px;
+}
+  #droppable1,#droppable2 { 
+    width: 150px; 
+    height: 150px; 
+    padding: 0.5em; 
+    float: right; 
+    margin: 10px; 
+    text-align: center;
+    border: 1px solid black;
+    border-width: 1px 2px 2px 1px;
+    box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5) inset,
+              -1px -1px 2px rgba(0, 0, 0, 0.5) inset;
+}
+
+.dragndrop {
+ width: 100vw;
+ height: 70vh;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.drops {
+    display: flex;
+    flex-direction: column;
+    float: right;
+}
+
+.ui-widget-header {
+    background-color: lightgrey;
+}
+
+.bottom {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.continue {
+    background-color: lightgrey;
+    width: 85px;
+    height: 25px;
+    text-align: center;
+    padding: 4px;
+    margin: 5px;
+    border: 1px solid black;
+    border-width: 1px 2px 2px 1px;
+    box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5) inset,
+              -1px -1px 2px rgba(0, 0, 0, 0.5) inset;
+}
+
+.turnRed {
+    background-color: red;
+}
+
+.number-area {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-num {
+ font-size: xx-large;
+ color: white;
+}
+
+.credit-card {
+    background-color: rgb(75, 74, 74);
+    width: 400px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3%;
+    border: 1px solid black;
+    border-width: 1px 2px 2px 1px;
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.5),
+                0 2px 5px rgba(0, 0, 0, 0.1);
+}
+  
+#sortable { 
+    background-color: rgb(163, 161, 161);
+    list-style-type: none; 
+    margin: 0; 
+    padding: 10px; 
+    width: 60%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-width: 1px 2px 2px 1px;
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.5),
+                0 2px 5px rgba(0, 0, 0, 0.1);
+}
+  #sortable li { 
+    margin: 0 3px 3px 3px; 
+    padding: 0.4em; 
+    padding-left: 1.5em; 
+    font-size: 1.4em; 
+    height: 40px; 
+}
+  #sortable li span { 
+    position: absolute;
+    margin-left: -1.3em;  
+} 
+
+.sorting-area {
+    display: flex;
+    width: 100vw;
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background-color: lightgrey;
+    display: flex;
+    text-align: center;
+    width: 80px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid black;
+    border-width: 1px 2px 2px 1px;
+    box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5) inset,
+              -1px -1px 2px rgba(0, 0, 0, 0.5) inset;
+}
+
+.container-red {
+    background-color: rgb(162, 14, 14);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: colorFade 3s infinite;
+}
+
+@keyframes colorFade {
+    0% { background-color: rgb(162, 14, 14); } /* Start color */
+    50% { background-color: red; } /* Midpoint color to transition to */
+    100% { background-color: rgb(162, 14, 14); } /* End color (same as the start for a smooth loop) */
+}
+
+.popup-red{
+    background-color: red;
+    width: 600px;
+    height: 200px;
+    padding: 50px;
+    text-align: center;
+    position: relative;
+    border: 1px solid black;
+    border-width: 1px 2px 2px 1px;
+    box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5) inset,
+              -1px -1px 2px rgba(0, 0, 0, 0.5) inset;
+}
+
+.buttons-red{
+    background-color: red;
+    width: 99%;
+    height: 20%;
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    bottom: 20px;
+    left: 50%; 
+    transform: translateX(-50%);
+}
+
+.choice-red{
+    background-color: red;
+    width: 80px;
+    height: 20px;
+    display: flex;
+    text-align: center;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-width: 1px 2px 2px 1px;
+    box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5) inset,
+              -1px -1px 2px rgba(0, 0, 0, 0.5) inset;
+
+}
+
+.choicetext-red{
+    background-color: red;
+    display: flex;
+}
+
+.index {
+    background-image: url("../control/Windows-2000-Blank-Blue-Windows-7-Theme-nintendofan12-extra-43228144-1920-1080.png");
+}
+
+.page1 {
+    background-color: rgb(29, 67, 133);
+}
+
+.where {
+    background-color: rgb(162, 14, 14);
+}
+
+.page2 {
+    background-color: rgb(15, 43, 92);
+}
+
+.page3 {
+    background-color: rgb(9, 23, 47);
+}
+
+.page4 {
+    background-color: rgb(5, 15, 31);
+}

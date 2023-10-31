@@ -1,0 +1,13 @@
+* {
+    box-sizing:border-box;
+    
+}
+
+.pop {
+    background-color: red;
+    width: 400px;
+    height: 60px;
+    position: absolute;
+    text-align: center;
+    padding: 20px;
+}
