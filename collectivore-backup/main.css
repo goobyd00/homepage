@@ -1,0 +1,31 @@
+* {
+    box-sizing:border-box;
+    
+}
+
+body {
+    background-color:lightgreen;
+}
+
+.categories {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+.category-boxes {
+    background-color: darkseagreen;
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.window {
+    background-color: rgb(170, 220, 170);
+    width: 150px;
+    height: 150px;
+}
+
