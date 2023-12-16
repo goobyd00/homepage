@@ -1,12 +1,21 @@
+@font-face {
+    font-family: 'Daydream';
+    src: url('../homepage/Daydream-WebFontKit/daydream-webfont.woff') format('woff');}
+
 body {
-    background-color:lightgoldenrodyellow
+    background-color: whitesmoke;
+    color: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Daydream';
 }
 
 p {
     cursor:grab;
-    background-color: lightgreen;
+    background-color: whitesmoke;
+    border: 1px dashed red;
     padding: 30px;
     border-radius: 50px;
+    font-family: monospace;
 }
 
 p:hover {
@@ -14,15 +23,35 @@ p:hover {
 }
 
 a { 
- color:green;
+ color:red;
  text-decoration: none;
  cursor:grabbing;
 }
 
 a:visited {
-  color: brown;
+  color: grey;
 }
 
 a:hover {
- background-color: cadetblue;
+ border: 1px dashed red;
+ padding: 5px;
+ border-radius: 20px;
+}
+
+.header {
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sites {
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
